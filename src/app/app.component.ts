@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
-import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -23,9 +22,9 @@ export class AppComponent {
       nombre: ['', [Validators.required, Validators.minLength(3)]],
       paterno: ['', [Validators.required, Validators.minLength(3)]],
       materno: ['', [Validators.required, Validators.minLength(3)]],
-      nivel: ['', [Validators.required]],
-      municipio: ['', [Validators.required]],
-      asunto: ['', [Validators.required]],
+      nivel: ["", [Validators.required]],
+      municipio: ["", [Validators.required]],
+      asunto: ["", [Validators.required]],
     });
   }
 
